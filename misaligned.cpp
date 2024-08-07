@@ -1,4 +1,4 @@
-#include "gtest/gtest.h"
+#include <gtest/gtest.h>
 #include "ColorMap.h"
 
 TEST(ColorMapDetails, CheckColorMap) {
