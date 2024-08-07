@@ -1,12 +1,11 @@
 #include "IWeatherSensor.h"
 #include <string>
 #include <iostream>
-using namespace std;
 
-namespace WeatherSpace{
-    string SensorReport(const IWeatherSensor& sensor){
+namespace WeatherSpace {
+    std::string SensorReport(const IWeatherSensor& sensor) {
         int precipitation = sensor.Precipitation();
-        string report = "Sunny day";
+        std::string report = "Sunny day";
 
         if (sensor.TemperatureInC() > 25) {
             if (precipitation >= 20 && precipitation < 60)
@@ -16,4 +15,4 @@ namespace WeatherSpace{
         }
         return report;
     }
-}
+} // namespace WeatherSpace

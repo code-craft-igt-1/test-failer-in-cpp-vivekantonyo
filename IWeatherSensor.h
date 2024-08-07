@@ -1,8 +1,8 @@
 #pragma once
 #include <string>
 using namespace std;
-namespace WeatherSpace{
-    class IWeatherSensor{
+namespace WeatherSpace {
+    class IWeatherSensor {
     public:
         virtual double TemperatureInC() const = 0;
         virtual int Precipitation() const = 0;

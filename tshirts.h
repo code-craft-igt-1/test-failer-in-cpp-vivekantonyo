@@ -1,5 +1,4 @@
 #pragma once
-
-namespace TshirtSizeChart{
+namespace TshirtSizeChart {
     char size(int cms);
 }

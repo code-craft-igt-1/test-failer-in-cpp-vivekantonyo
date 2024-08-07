@@ -1,8 +1,8 @@
 #pragma once
 #include "IWeatherSensor.h"
 
-namespace WeatherSpace{
-    class SensorStub : public IWeatherSensor{
+namespace WeatherSpace {
+    class SensorStub : public IWeatherSensor {
     public:
         SensorStub();
         SensorStub(int temperature, int precipitation, int humidity, int windSpeed);

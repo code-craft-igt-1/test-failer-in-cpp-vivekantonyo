@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
 #include "tshirts.h"
 
-namespace TshirtSizeChart{
+namespace TshirtSizeChart {
     char size(int cms) {
         char sizeName = '\0';
         if (cms < 38) {
@@ -15,9 +15,9 @@ namespace TshirtSizeChart{
         }
         return sizeName;
     }
-}
+}//namespace TshirtSizeChart
 
-TEST(TshirtSizeChart, CheckTshirtSize){
+TEST(TshirtSizeChart, CheckTshirtSize) {
     EXPECT_EQ(TshirtSizeChart::size(37), 'S');
     EXPECT_EQ(TshirtSizeChart::size(40), 'M');
     EXPECT_EQ(TshirtSizeChart::size(43), 'L');
