@@ -28,9 +28,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ColorMap.h" />
+    <ClInclude Include="header\tshirts.h" />
     <ClInclude Include="IWeatherSensor.h" />
     <ClInclude Include="SensorStub.h" />
-    <ClInclude Include="tshirts.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{689d8590-2254-4c54-92f8-6be05fc4da3f}</ProjectGuid>
