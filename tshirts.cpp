@@ -13,7 +13,7 @@ namespace TshirtSizeChart {
         }
         return sizeName;
     }
-}  //namespace TshirtSizeChart
+}  // namespace TshirtSizeChart
 
 TEST(TshirtSizeChart, CheckTshirtSize) {
     EXPECT_EQ(TshirtSizeChart::size(37), 'S');

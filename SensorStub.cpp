@@ -16,4 +16,4 @@ namespace WeatherSpace {
     int SensorStub::Precipitation() const { return m_precipitation; }
     int SensorStub::Humidity() const { return m_humidity; }
     int SensorStub::WindSpeedKMPH() const { return m_windSpeed; }
-}// namespace WeatherSpace
+}  // namespace WeatherSpace
