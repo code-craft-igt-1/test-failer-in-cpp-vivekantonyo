@@ -17,8 +17,8 @@ namespace ColorMapDetails {
 
     std::string printColorMap() {
         std::ostringstream colorBuffer;
-        for(int i = 0; i < 5; i++) {
-            for(int j = 0; j < 5; j++) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
                 colorBuffer << (i * 5 + j + 1) << " | ";
                 colorBuffer << majorColor[i] << " | " << minorColor[i] << "\n";
             }
@@ -52,4 +52,4 @@ namespace ColorMapDetails {
         "23 | Violet | Green\n"
         "24 | Violet | Brown\n"
         "25 | Violet | Slate\n";
-}// namespace ColorMapDetails
+}  // namespace ColorMapDetails

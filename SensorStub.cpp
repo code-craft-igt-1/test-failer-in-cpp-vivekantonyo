@@ -2,7 +2,7 @@
 #include "SensorStub.h"
 
 namespace WeatherSpace {
-    SensorStub::SensorStub() 
+    SensorStub::SensorStub()
     {}
 
     SensorStub::SensorStub(int temperature, int precipitation, int humidity, int windSpeed) {
