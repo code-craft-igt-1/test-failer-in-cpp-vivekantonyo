@@ -1,12 +1,10 @@
 #pragma once
 #include "SensorStub.h"
 
-namespace WeatherSpace
-{
+namespace WeatherSpace{
     SensorStub::SensorStub(){}
 
-    SensorStub::SensorStub(int temperature, int precipitation, int humidity, int windSpeed)
-    {
+    SensorStub::SensorStub(int temperature, int precipitation, int humidity, int windSpeed){
         m_temperature = temperature;
         m_precipitation = precipitation;
         m_humidity = humidity;

@@ -3,10 +3,8 @@
 #include <iostream>
 using namespace std;
 
-namespace WeatherSpace
-{
-    string SensorReport(const IWeatherSensor& sensor)
-    {
+namespace WeatherSpace{
+    string SensorReport(const IWeatherSensor& sensor){
         int precipitation = sensor.Precipitation();
         string report = "Sunny day";
 
@@ -19,4 +17,3 @@ namespace WeatherSpace
         return report;
     }
 }
-
