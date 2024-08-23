@@ -1,21 +1,10 @@
-#include <assert.h>
-#include <iostream>
+#include <gtest/gtest.h>
+#include "ColorMap.h"
 
-int printColorMap() {
-    const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
-    const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
-    int i = 0, j = 0;
-    for (i = 0; i < 5; i++) {
-        for (j = 0; j < 5; j++) {
-            std::cout << i * 5 + j << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
-        }
-    }
-    return i * j;
-}
-
-int main() {
-    int result = printColorMap();
-    assert(result == 25);
+TEST(ColorMapDetails, CheckColorMap) {
+    int colorMapSize = ColorMapDetails::printColorMapSize();
+    EXPECT_EQ(colorMapSize, 25);
+    std::string colorMapContents = ColorMapDetails::printColorMap();
+    EXPECT_EQ(colorMapContents, ColorMapDetails::expectedColorMap);
     std::cout << "All is well (maybe!)\n";
-    return 0;
 }
