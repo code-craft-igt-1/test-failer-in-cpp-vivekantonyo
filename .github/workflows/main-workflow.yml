@@ -19,7 +19,18 @@ jobs:
       run: |
         cmake -S . -B build
         cmake --build build
-      
-    - name: FalsePositive fail
+        
+    - name: tshirts pass
       run: |
-        bash .github/workflows/expectfail.sh build/FalsePositive
+        g++ -Wall -Wextra -Werror tshirts.cpp -o tshirts.out
+        ./tshirts.out
+
+    - name: misaligned pass
+      run: |
+        g++ -Wall -Wextra -Werror misaligned.cpp ColorMap.cpp -o misaligned.out
+        ./misaligned.out
+
+    - name: alerter pass
+      run: |
+        g++ -Wall -Wextra -Werror weatherreport.cpp SensorStub.cpp IWeatherSensor.cpp  -o weatherreport.out
+        ./weatherreport.out

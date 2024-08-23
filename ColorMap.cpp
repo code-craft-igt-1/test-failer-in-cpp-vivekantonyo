@@ -20,7 +20,7 @@ namespace ColorMapDetails {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 colorBuffer << (i * 5 + j + 1) << " | ";
-                colorBuffer << majorColor[i] << " | " << minorColor[i] << "\n";
+                colorBuffer << majorColor[i] << " | " << minorColor[j] << "\n";
             }
         }
         return colorBuffer.str();

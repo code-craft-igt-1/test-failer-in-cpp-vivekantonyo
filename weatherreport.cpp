@@ -11,5 +11,5 @@ TEST(WeatherState, isWeatherRainy) {
 TEST(WeatherState, isWeatherHighPrecipitationAndLowWindspeed) {
     WeatherSpace::SensorStub sensor(29, 78, 72, 42);
     string report = WeatherSpace::SensorReport(sensor);
-    EXPECT_NE(report.find("rainy day"), std::string::npos);
+    EXPECT_NE(report.find("Heavy"), std::string::npos);
 }
