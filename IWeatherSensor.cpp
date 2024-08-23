@@ -15,7 +15,8 @@ namespace WeatherSpace {
         if (temperature > 25) {
             if (precipitation >= 20) {
                 return "Partly cloudy";
-            }if (windSpeed > 50) {
+            }
+            if (windSpeed > 50) {
                 return "Alert, Stormy with heavy rain";
             }
         }
